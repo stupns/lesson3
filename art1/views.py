@@ -24,6 +24,6 @@ def detail(request):
 #     return  HttpResponse(t.render(c))
 
 def detail(request):
-    c = Context({'name':'Богдан'})
+    c = Context({'name':'Serhii'})
     t = loader.get_template('file.html')
     return HttpResponse(t.render(c))
