@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cписок статті</title>
+</head>
+<body>
+<h1>статті</h1>
+{% for p in list %}
+    <a href = "/app2/{{ p.id }}/">
+        {{ p.title }}</a>
+{% endfor %}
+</body>
+</html>

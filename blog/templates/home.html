@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for n in post %}
+    <h1>{{ n.title }}</h1>
+    <h2>{{ n.timestamp }}</h2>
+    <h2>{{ n.body }}</h2>
+{% endfor %}
+</body>
+</html>

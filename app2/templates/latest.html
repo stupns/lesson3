@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<hr>
+
+{% if user.is_anonymous %}
+Вы не войшли в кабинет
+{% else %}
+Вы войшли как: {{ user.username }}
+    Ip-addres {{ my_ip_adress }}
+{% endif %}
+
+
+<hr>
+
+
+<h1>{{ title }}</h1>
+
+<h1>дата {{ date }}</h1>
+<h1>автор {{ avtor }}</h1>
+<h1><a href="{{ link }}">first post</a></h1>
+<br>
+{{ mu }}+ {{ ky }}
+</body>
+</html>
